@@ -5,6 +5,7 @@
     list-style: none !important;
     text-decoration: none !important;
     box-sizing: border-box !important;
+    transition: all 300ms linear !important;
 }
 
 :root {
@@ -421,3 +422,135 @@ p {
     text-align: left;
     color: #7B7B7B;
 }
+
+.max-w {
+    max-width: 600px;
+}
+
+.hover:hover::after {
+    content: "";
+    background-color: var(--orange-color);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    transition: all 300ms linear;
+}
+
+.hover:hover {
+    .opa-1 {
+        opacity: 1;
+    }
+}
+
+.work {
+    font-family: var(--work);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.design {
+    font-family: var(--work);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+.ad {
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, -50%);
+}
+
+.opa-0 {
+    opacity: 0;
+}
+
+.max-width {
+    max-width: 500px;
+}
+
+.slides {
+    background-color: var(--orange-color);
+}
+
+.alignment {
+    left: -40px;
+}
+
+/* the slides */
+.slick-slide {
+    margin: 0 50px;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -50px;
+}
+
+.name {
+    font-family: var(--work);
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.ceo {
+    font-family: var(--work);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+}
+
+.lor {
+    font-family: var(--work);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: white;
+}
+
+/* slick slider */
+
+
+.slick-dots li button:before {
+    content: "" !important;
+    background-color: #373737;
+    border-radius: 25px;
+    height: 20px !important;
+}
+
+.slick-dots li {
+    width: 35px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: #7B7B7B;
+    width: 40px !important;
+    height: 20px !important;
+    border-radius: 25px;
+}
+
+
+.graphic{}
+.stellar{}
+.crist{}
+.date{}
