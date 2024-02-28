@@ -309,6 +309,10 @@ p {
     .d_max_md_none {
         display: none;
     }
+
+    .pt-50 {
+        padding-top: 50px;
+    }
 }
 
 @media (max-width: 767.9px) {
@@ -320,9 +324,7 @@ p {
 
 }
 
-.pt-50 {
-    padding-top: 50px;
-}
+
 
 .words {
     font-family: var(--work);
@@ -414,7 +416,7 @@ p {
     font-weight: 500;
     line-height: 25px;
     letter-spacing: 0em;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .oc {
@@ -448,6 +450,10 @@ p {
     .opa-1 {
         opacity: 1;
     }
+}
+
+.pb-50 {
+    padding-bottom: 50px;
 }
 
 .work {
@@ -508,7 +514,7 @@ p {
     font-weight: 500;
     line-height: 31px;
     letter-spacing: 0em;
-    text-align: center;
+    /* text-align: center; */
     color: white;
 }
 
@@ -756,7 +762,7 @@ p {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0em;
-    text-align: left;
+    /* text-align: left; */
     outline: none;
     border: none;
 }
@@ -795,7 +801,7 @@ p {
     color: white;
 }
 
-@media (max-width: 991.9px) and (min-width: 768.9px) {
+@media (max-width: 991.9px) and (min-width: 767.9px) {
     .w-h_change {
         width: 40px;
         height: 30px;
@@ -827,7 +833,7 @@ p {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 767.9px) {
     .pt_val {
         padding-top: 30px;
     }
@@ -859,8 +865,6 @@ p {
 .cursor {
     cursor: pointer;
 }
-
-
 
 .items:hover {
     color: var(--orange-color);
@@ -911,7 +915,7 @@ p {
     border: none;
     border-radius: 50px !important;
     outline: none;
-    background-color: red;
+    background-color: var(--orange-color);
     color: white;
     cursor: pointer;
     padding: 15px;
