@@ -159,7 +159,7 @@ p {
         position: fixed;
         width: 100%;
         height: 100%;
-        backdrop-filter: blur(20px);
+        background-color: azure;
         align-items: center;
         justify-content: center;
         flex-direction: column;
@@ -310,6 +310,10 @@ p {
     .pos-change {
         right: 0;
     }
+}
+
+.add_hover:hover {
+    color: #00ACFF;
 }
 
 @media (min-width: 768.9px) {
@@ -606,7 +610,7 @@ p {
 
     .stellar {
         font-family: var(--work);
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 400;
         line-height: 20px;
         letter-spacing: 0em;
@@ -630,6 +634,11 @@ p {
         letter-spacing: 0em;
         text-align: left;
         color: #7B7B7B;
+    }
+
+    .width_ch {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -903,7 +912,7 @@ p {
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 3;
+    z-index: 2;
     border: none;
     border-radius: 50px !important;
     outline: none;
@@ -917,6 +926,7 @@ p {
 
 .orangeCard {
     transition: 300ms linear;
+    height: 100%;
 }
 
 .orangeBox {
@@ -952,4 +962,16 @@ p {
 
 .width_max {
     width: max-content;
+}
+
+@media (max-width: 991.9px) {
+    .prop {
+        padding: 2rem;
+    }
+
+    .alignment {
+        width: 50px;
+        height: 50px;
+        left: -28px;
+    }
 }
