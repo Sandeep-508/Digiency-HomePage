@@ -433,24 +433,7 @@ p {
     max-width: 600px;
 }
 
-.hover:hover::after {
-    content: "";
-    background-color: var(--orange-color);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.9;
-    transition: all 300ms linear;
-}
 
-.hover:hover {
-    .opa-1 {
-        opacity: 1;
-    }
-}
 
 .pb-50 {
     padding-bottom: 50px;
@@ -476,11 +459,11 @@ p {
     color: white;
 }
 
-.ad {
+/* .ad {
     left: 50%;
     bottom: 0;
     transform: translate(-50%, -50%);
-}
+} */
 
 .opa-0 {
     opacity: 0;
@@ -618,7 +601,7 @@ p {
         font-family: var(--work);
         font-size: 20px;
         font-weight: 400;
-        line-height: 24px;
+        line-height: 20px;
         letter-spacing: 0em;
         text-align: left;
     }
@@ -915,10 +898,49 @@ p {
     border: none;
     border-radius: 50px !important;
     outline: none;
-    background-color: var(--orange-color);
+    background-color: #ff5500cb;
     color: white;
     cursor: pointer;
     padding: 15px;
     border-radius: 10px;
     font-size: 18px;
+}
+
+.orangeCard {
+    transition: 300ms linear;
+}
+
+.orangeBox {
+    background-color: #FF5300;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 300ms linear;
+    z-index: 3;
+    cursor: pointer;
+    background-position: center;
+    text-align: center;
+    top: 0;
+}
+
+.orangeCard:hover>.orangeBox {
+    opacity: 1;
+}
+
+.cateogry {
+    font-family: var(--work);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: black;
+}
+
+.cateogry:hover {
+    color: var(--orange-color);
+}
+
+.width_max {
+    width: max-content;
 }
