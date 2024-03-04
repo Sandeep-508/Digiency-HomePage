@@ -269,7 +269,7 @@ p {
         flex-direction: column-reverse;
     }
 
-    .show{
+    .show {
         left: 0;
     }
 
@@ -1021,7 +1021,7 @@ p {
 }
 
 .orangeBox {
-    background-color: #FF5300;
+    background-color: #ff5300e6;
     width: 100%;
     height: 100%;
     opacity: 0;
@@ -1035,6 +1035,11 @@ p {
 
 .orangeCard:hover>.orangeBox {
     opacity: 1;
+}
+
+.slick-list {
+    padding-top: 10px !important;
+    padding-bottom: 20px !important;
 }
 
 .cateogry {
