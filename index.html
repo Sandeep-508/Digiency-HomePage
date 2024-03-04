@@ -27,18 +27,18 @@
                 </div>
                 <input type="checkbox" id="menubar" hidden>
                 <div class="d-flex lg-view">
-                    <a href="/" class="nav-item nav-link pr-38">Home</a>
-                    <a href="/" class="nav-item nav-link pr-38">About Us</a>
-                    <a href="/" class="nav-item nav-link pr-38">Contact</a>
-                    <a href="/" class="nav-item nav-link pr-38">Our Work</a>
-                    <a href="/" class="nav-item nav-link pr-38">Clients</a>
-                    <a href="/" class="nav-item nav-link">Blogs</a>
+                    <a href="#home" class="nav-item nav-link pr-38">Home</a>
+                    <a href="#about" class="nav-item nav-link pr-38">About Us</a>
+                    <a href="#contact" class="nav-item nav-link pr-38">Contact</a>
+                    <a href="#work" class="nav-item nav-link pr-38">Our Work</a>
+                    <a href="#clients" class="nav-item nav-link pr-38">Clients</a>
+                    <a href="#blogs" class="nav-item nav-link">Blogs</a>
                 </div>
                 <div class="w-h cursor">
                     <img src="./assets/svg/sun-light-theme-svgrepo-com.svg" alt="dark mode"
-                        class="w-100 h-100 object-fit-cover" onclick="toggleDarkMode()">
+                        class="w-100 h-100 object-fit-cover" onclick="toggleDarkMode">
                 </div>
-                <label for="menubar">
+                <label for="menubar" class="menu">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -48,7 +48,7 @@
     </section>
 
     <!-- NavBar -->
-    <section class="d-flex bg position-relative overflow-hidden hover_efect py-100">
+    <section class="d-flex bg position-relative overflow-hidden hover_efect py-100" id="home">
         <div class="position-absolute pos-change">
             <div class="d-flex box align-items-center justify-content-center shadow py-1 cursor">
                 <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +121,7 @@
 
     <!-- We are the Best Digital Agency -->
 
-    <section class="py-100">
+    <section class="py-100" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 py-20 flex-md-prop">
@@ -520,7 +520,7 @@
 
     <!-- Team Memeber -->
 
-    <section class="py-100">
+    <section class="py-100" id="work">
         <div class="container d-flex align-items-center justify-content-center flex-column">
             <div class="d-flex flex-column align-items-center justify-content-center">
                 <p class="lorem pb-25px">Our Work</p>
@@ -610,7 +610,7 @@
 
     <!-- Our Work -->
 
-    <section class="py-100 bg_dif overflow-hidden">
+    <section class="py-100 bg_dif overflow-hidden" id="clients">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center">
                 <p class="lorem pb-25px">Client Feedback</p>
@@ -684,7 +684,7 @@
 
     <!-- Clients Feedback -->
 
-    <section class="py-100 overflow-hidden">
+    <section class="py-100 overflow-hidden" id="blogs">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center">
                 <p class="lorem pb-25px">Our Blog</p>
@@ -753,7 +753,7 @@
 
     <!-- Our Blog -->
 
-    <section class="py-100">
+    <section class="py-100" id="contact">
         <div class="container">
             <div class="d-flex flex-column align-items-center justify-content-center">
                 <p class="lorem pb-25px">Contact Us</p>
