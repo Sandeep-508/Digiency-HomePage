@@ -888,6 +888,25 @@ p {
     background-color: #eee;
 }
 
+.choice {
+    font-family: var(--poppins);
+    font-weight: var(--font-weight-500);
+    font-size: var(--font-size-20);
+    line-height: var(--lh-24);
+    text-align: left;
+    color: var(--light-text-color);
+    cursor: pointer;
+}
+
+.min-w-150 {
+    min-width: 150px;
+}
+
+
+
+.min-w-200 {
+    min-width: 200px;
+}
 
 .back_clr {
     background-color: #373737;
